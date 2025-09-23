@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_main)
 
-//        buttonStart = findViewById(R.id.btnStart)
-//
-//        buttonStart.setOnClickListener {
-//            val startIntent : Intent
-//            startIntent = Intent(this@MainActivity, LoginActivity::class.java)
-//            startActivity(startIntent)
-//        }
+        buttonStart = findViewById(R.id.btnStart)
+
+        buttonStart.setOnClickListener {
+            val startIntent : Intent
+            startIntent = Intent(this@MainActivity, LoginActivity::class.java)
+            startActivity(startIntent)
+        }
     }
 }

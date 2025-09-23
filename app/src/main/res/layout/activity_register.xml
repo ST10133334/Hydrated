@@ -5,17 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-    <ImageView
-        android:id="@+id/designView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/design1" />
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/HydratedLogo"
@@ -34,7 +24,7 @@
         android:layout_marginStart="10dp"
         android:fontFamily="@font/raleway"
         android:gravity="center"
-        android:text="Welcome back! Time to track your sips."
+        android:text="Your hydration journey starts now."
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/loginEmailLayout"
+        android:id="@+id/registerEmailLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -51,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/HydratedLogo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/registerEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -60,16 +50,16 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/loginPasswordLayout"
+        android:id="@+id/registerPasswordLayout"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginEmailLayout">
+        app:layout_constraintTop_toBottomOf="@+id/registerEmailLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loginPassword"
+            android:id="@+id/registerPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -77,18 +67,36 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerConfirmPasswordLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPasswordLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registerConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/homeBtnLogin"
+        android:id="@+id/homeBtnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:backgroundTint="#1800AD"
-        android:text="Login"
+        android:text="Register"
         android:textSize="30sp"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPasswordLayout"/>
+        app:layout_constraintTop_toBottomOf="@+id/registerConfirmPasswordLayout"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -97,35 +105,35 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/homeBtnLogin">
+        app:layout_constraintTop_toBottomOf="@+id/homeBtnRegister">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New to Hydrated+?"
+            android:text="Have an account?"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="688dp" />
 
         <TextView
-            android:id="@+id/textRegister"
+            android:id="@+id/textLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:clickable="true"
             android:focusable="true"
-            android:text="Register"
+            android:text="Login"
             android:textColor="#1800AD"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/designView2"
-        android:layout_width="411dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="80dp"
-        app:srcCompat="@drawable/design2"
+        android:id="@+id/designView3"
+        android:layout_width="249dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/design3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
