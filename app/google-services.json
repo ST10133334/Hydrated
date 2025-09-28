@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491229006793",
+    "project_id": "hydrated-709b7",
+    "storage_bucket": "hydrated-709b7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491229006793:android:d75aa192309f93b5a1f618",
+        "android_client_info": {
+          "package_name": "com.example.hydrated"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ45-8vz9X6deRzW1jKzsAiWUN5iIgGzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491229006793:android:71b22eb5402ccf57a1f618",
+        "android_client_info": {
+          "package_name": "com.example.photomemories"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ45-8vz9X6deRzW1jKzsAiWUN5iIgGzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

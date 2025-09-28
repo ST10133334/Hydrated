@@ -23,5 +23,10 @@ class RegisterActivity : AppCompatActivity() {
             val registerIntent = Intent(this@RegisterActivity, LoginActivity::class.java)
             startActivity(registerIntent)
         }
+
+        binding.homeBtnRegister.setOnClickListener {
+            val calculationIntent = Intent(this@RegisterActivity, CalculationActivity::class.java)
+            startActivity(calculationIntent)
+        }
     }
 }
