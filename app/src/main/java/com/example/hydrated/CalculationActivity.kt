@@ -1,5 +1,6 @@
 package com.example.hydrated
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -35,7 +36,9 @@ class CalculationActivity : AppCompatActivity() {
         // Calculate daily goal button
         val btnCalculate = findViewById<com.google.android.material.button.MaterialButton>(R.id.btnCalculate)
         btnCalculate.setOnClickListener {
-            Toast.makeText(this, "Calculating your goal...", Toast.LENGTH_SHORT).show()
+            val homeIntent = Intent(this@CalculationActivity, HomeActivity::class.java)
+            homeIntent.putExtra("startFragment", "home")
+            startActivity(homeIntent)
         }
     }
 }
